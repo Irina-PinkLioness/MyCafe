@@ -1,0 +1,222 @@
+.face{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 40vw;
+}
+
+
+.face_item_up{
+    background-image: url("../../img/salat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(50% - 10px);
+    margin-bottom: 10px;
+    margin-top: 40px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.face_item_up h2{
+    font-family: "Play";
+    font-size: 25px;
+    width: fit-content;
+}
+
+
+.face_item_bott{
+    background-image: url("../../img/creps.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(53% - 10px); 
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.face_slide{
+    width: calc(60% - 10px);
+    height: 112%;
+}
+
+
+.face_item{
+    width: calc(42% - 10px);
+    height: 100%;
+}
+
+
+@font-face {
+    font-family: "Play";
+    src: url(../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+
+.face_slide_item h1{
+    display: inline;
+    font-family: "Play";
+    font-size: 50px;
+    position: relative;
+    margin: 40px 0;
+}
+
+
+.face_slide_item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 30px;
+}
+
+
+.face_slide_item > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.shop_link{
+    padding-top: 320px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+
+.shop_link:hover a{
+    color: rgb(251, 5, 83);
+}
+
+
+.menu_link{
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(78, 29, 71);
+    width: fit-content;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+
+.menu_link:hover a{
+    color:rgb(244, 86, 151);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.face_item_bott h2{
+    font-family: "Play" ;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+
+.face_item_bott h1{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+
+@media(max-width:1471px){
+    .face{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .face_slide{
+        width: 100%;
+    }
+    .face_item{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .face_item_up, .face_item_bott{
+        width: calc(50% - 10px);
+        min-height: 350px;
+        padding: 5%;
+        margin-top: 0;
+    }
+}
+
+
+@media(max-width:945px){
+    .face_item{
+        flex-wrap: wrap;
+    }
+    .face_item_up, .face_item_bott{
+        width: 100%;       
+    }
+    .face_slide_item{
+        padding: 10%;
+    }
+    .face_slide_item h1{
+        display: block;
+        text-align: center;
+        margin-top: 300px;
+        font-weight: bolder;
+    }
+    .shop_link{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid grey;
+        background-color: rgb(182, 182, 244);
+        padding: 5%;
+        border-radius: 20px;
+        margin-left: 20%;
+    }
+    .menu_link{
+        display: inline-block;
+        border: 1px solid gray;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(182, 182, 244);
+        border-radius: 20px;
+        padding: 5%;
+        margin-left: 25%;
+    }
+}
+
+
+@media(max-width:410px){
+    .shop_link{
+        font-size: 30px;
+        padding: 5%;
+    }
+    .face_slide_item h1{
+        font-size:30px;
+        margin-top: 100px;
+    }
+    .menu_link{
+        display: inline-block;
+        border: 1px solid gray;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color: rgb(182, 182, 244);
+        border-radius: 20px;
+        padding: 5%;
+        margin-left: 25%;
+    }
+}

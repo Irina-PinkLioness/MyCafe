@@ -1,0 +1,78 @@
+.nav, .nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav{
+    background-color: rgb(54, 142, 3);
+    padding: 20px;
+}
+
+
+.nav a{
+    color: aliceblue;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+
+
+.nav-left{
+    margin-right: 70px;
+    color: wheat;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+
+.nav-right{
+    display: inline-block;
+    border-left: 3px solid wheat;
+    padding-left: 270px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.nav-right a:hover{
+    color: greenyellow;
+
+}
+
+
+.nav-left i{
+    color: azure;
+    margin-right: 20px;
+}
+
+
+.nav-right i{
+    color: azure;
+}
+
+
+.nav-left i:hover{
+    color: greenyellow;
+}
+
+
+.nav-right i:hover{
+    color: greenyellow;
+}
+
+
+@media(max-width:1471px){
+    .nav-right{
+        display: none;
+    }
+}
+
+
+@media(max-width:400px){
+    .nav-left h2{
+        font-size: 13px;
+        font-family: sans-serif;
+    }
+}

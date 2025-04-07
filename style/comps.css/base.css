@@ -1,0 +1,29 @@
+body{
+    background-image: url("../../img/grocery2.jpg");
+    background-size: 25%;
+    padding: 0 8%; 
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    background-color: #faebd7;
+    padding: 3% 0;
+    position: relative;
+    z-index: 1;
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    background-color: #dcdcdc;
+    margin-bottom: 3%;
+    padding: 20px 0;
+}
